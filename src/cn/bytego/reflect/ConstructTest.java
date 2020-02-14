@@ -34,8 +34,8 @@ public class ConstructTest {
         System.out.println("--------------------------------------------------");
         Constructor constructor1 = clazz.getDeclaredConstructor(String.class, int.class, String.class, String.class);
         System.out.println(constructor1.toString());
-        Constructor constructor2 = clazz.getConstructor(String.class, int.class, String.class, String.class);
-        System.out.println(constructor2.getExceptionTypes());
+        Constructor constructor2 = clazz.getDeclaredConstructor(String.class, int.class, String.class, String.class);
+        System.out.println(constructor2.toString());
 
     }
 }
